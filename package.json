@@ -11,8 +11,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:unit": "react-scripts test --watchAll=false",
+    "test:coverage": "yarn test:unit --coverage",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext ts,tsx . --fix"
+    "lint": "eslint --ext ts,tsx . --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
