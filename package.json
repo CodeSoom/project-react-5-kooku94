@@ -6,7 +6,9 @@
     "start": "webpack-dev-server --open --mode=development",
     "test:unit": "jest",
     "test:watch": "jest test --watchAll",
-    "test:coverage": "jest test --watchAll --coverage"
+    "test:coverage": "jest test --watchAll --coverage",
+    "lint": "eslint --ext js,jsx .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "given2": "^2.1.7",
     "html-webpack-plugin": "^5.4.0",
+    "husky": "^7.0.2",
     "jest": "^27.2.5",
     "jest-plugin-context": "^2.9.0",
     "webpack": "^5.58.2",
