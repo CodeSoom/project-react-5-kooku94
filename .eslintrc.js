@@ -27,6 +27,9 @@ module.exports = {
     context: 'readonly',
     given: 'readonly',
   },
+  ignorePatterns: [
+    'dist',
+  ],
   rules: {
     indent: ['error', 2],
     'no-trailing-spaces': 'error',
@@ -51,7 +54,7 @@ module.exports = {
     'jsx-a11y/label-has-associated-control': ['error', { assert: 'either' }],
     'linebreak-style': 'off',
     'no-proto': 'off',
-
+    'import/no-extraneous-dependencies': 'off',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
   },
