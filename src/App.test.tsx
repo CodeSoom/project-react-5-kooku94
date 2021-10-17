@@ -1,9 +1,8 @@
 import { render, screen } from '@testing-library/react';
-
 import App from './App';
 
 test('renders Beans', () => {
   render(<App />);
-  const Beans = screen.getByText(/Beans/i);
-  expect(Beans).not.toBeUndefined();
+  const linkElement = screen.getByText(/Beans/i);
+  expect(linkElement).toBeInTheDocument();
 });
