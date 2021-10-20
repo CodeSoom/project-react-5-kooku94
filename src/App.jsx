@@ -1,5 +1,10 @@
+import Home from './pages/Home';
+
 export default function App() {
   return (
-    <div>Bean</div>
+    <>
+      <div>Bean</div>
+      <Home />
+    </>
   );
 }
